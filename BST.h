@@ -112,11 +112,11 @@ void postOrder( TreeNodePtr treePtr )
 void printTree(TreeNodePtr treePtr, int space) {
    if (treePtr != NULL) {
 
-   space += 4;
+   space += 3;
 
    printTree(treePtr->rightPtr, space);
 
-   for (int i = 5; i < space; i++) 
+   for (int i = 3; i < space; i++) 
        printf(" ");
    printf("%d\n", treePtr->data);
 
